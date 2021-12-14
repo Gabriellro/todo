@@ -6,7 +6,7 @@ require_once('database/conexao.php');
 
 $conn = conn();
 
-$cliente = pegaDadosClientes($conn);
+$tarefas = pagatarefas($conn, $id);
 
 ?>
 
@@ -45,12 +45,5 @@ $cliente = pegaDadosClientes($conn);
         <a href="#" class="w3-bar-item w3-button"><span class="material-icons-round">search</span></a> 
     </div>
 </body>
-
-<script>
-
-    var nome = $(".nome").html().split(': ')[1];
-    console.log(nome)
-
-</script>
 
 </html>
