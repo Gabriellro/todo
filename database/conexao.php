@@ -5,7 +5,7 @@ function conn()
     try {
         $db = new mysqli(HOST, USER, PASS, DATABASE);
         return $db;
-    } catch (\Throwable $th) {
+    } catch (\Exception $th) {
         die($th);
     }
 }

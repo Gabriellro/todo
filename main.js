@@ -1,9 +1,9 @@
 //Modal Create
 
-const openModal = () => document.getElementsByClassName('modal')
+const openModal = () => document.getElementById('modal')
     .classList.add('active')
 
-const closeModal = () => document.getElementsByClassName('modal')
+const closeModal = () => document.getElementById('modal')
     .classList.remove('active')
 
 document.getElementById('cadastrartarefa')
